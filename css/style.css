@@ -14,7 +14,11 @@
 .container{
   padding: 0 2vh 0 2vh;
 }
-
+.imgRes{
+  max-width:80%;
+  padding-right:0;
+  padding-left: 0;  
+}
 body {
     margin: 0;
     font-family: 'Noto Serif',Arial, Helvetica, sans-serif;
@@ -54,6 +58,7 @@ p.leader{
 ul{
   list-style: none;
 }
+
 /*Header and Navigation  */
  
   .topnav {
@@ -117,6 +122,7 @@ ul{
     height: 100vh;
     background:var(--light-grey);
     overflow: hidden; 
+    padding-bottom: 2rem;
        
   }
   #game-page  .fas{
@@ -299,6 +305,18 @@ footer{
 
 }
   @media screen and (max-width: 600px) {
+     h2{
+      font-size:1.8rem;
+    }
+    p{
+      font-size: .8rem;
+     
+    }
+    p.leader{
+      font-size: 1rem;
+       padding: .2rem;
+       margin: 0;
+    }
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -333,6 +351,11 @@ footer{
     #gift-cards{
       display: inline;
     }
+    #gift-cards img{
+      display: block;
+      padding-left: auto;
+      padding-right: auto;
+    }
     #gift-cards h2{
       margin:5px 10px 5px 10px; 
     }
@@ -355,9 +378,7 @@ footer{
     h1{
       font-size:3rem;
     }
-    h2{
-      font-size:2rem;
-    }
+   
     #entertainment{
       height: 60vh;
     }
@@ -378,8 +399,8 @@ footer{
       height: 50vh;
     }
     #game-page p{
-      margin-top:5px; 
-      margin-bottom: 5px;
+      margin-top:.3rem; 
+      margin-bottom: .3rem;
     }
     #game-page button{
       margin-bottom:1vh; 
@@ -389,9 +410,7 @@ footer{
     }
   }
   @media screen and (max-height: 600px) {
-    entertainment{
-      height: 10vh;
-    }
+   
     #entertainment p{
       display: none;
     }
@@ -411,3 +430,22 @@ footer{
       display: none;
     }
   }
+
+ @media screen and (max-height: 760px) ,screen and (max-width:600px){
+  #main-section{
+    height: 75vh;
+  }
+  #game-page,#entertainment{
+    height: 60vh;
+  }
+ } 
+
+  @media screen and (max-height: 500px) ,screen and (max-width:600px){
+     #game-page,#entertainment{
+    height: 65vh;
+  }
+   #main-section{
+    height: 80vh;
+  }
+  }
+
